@@ -71,5 +71,6 @@ def delte_student():
     cursor.execute('DELETE FROM DB_student WHERE db_student_id=?', (student_id,))
     print ("Follow row are deleted: ", delete)
     conn.commit()
-
+botton_delete = tk.Button(root, text='Delete', command=delte_student)
+botton_delete.pack(pady=25)
 root.mainloop() #must be put to the end of programming code
